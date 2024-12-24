@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Features</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        h1, h2, h3 {
+            color: #ffffff;
+        }
+
+        p {
+            font-size: 0.9rem;
+            color: #b0b0b0;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #1e1e1e;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            display: flex;
+            align-items: left;
+            justify-content: left;
+        }
+
+        .logo img {
+            max-width: 60px;
+            height: auto;
+        }
+
+        .logo h1 {
+            font-size: 1.2rem;
+            margin-left: 1px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            list-style: none;
+        }
+
+        nav ul li a {
+            color: #b0b0b0;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #007BFF;
+        }
+
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 60px; /* To account for fixed header */
+        }
+
+        /* Section Styling */
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .features, .feature-list {
+            background: #1e1e1e;
+        }
+
+        .features-content {
+            text-align: left;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        .features-content ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .features-content ul li {
+            margin-bottom: 10px;
+        }
+
+        .features-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background: #1e1e1e;
+            padding: 15px 0;
+            text-align: center;
+            color: #b0b0b0;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.jpg" alt="Logo">
+            <h1>Capital Network</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li>Services (You are here)</li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <section class="section features">
+            <h2>Server Features</h2>
+            <div class="features-content">
+                <p>At Capital Network, we pride ourselves on offering a wide array of features to enhance your gameplay experience. Here are some of the things you can enjoy on our server:</p>
+                <ul>
+                    <li>🌐 <b>Custom Maps:</b> Explore unique and meticulously crafted maps designed to provide immersive environments.</li>
+                    <img src="img/features/speed.png" alt="Custom Maps">
+                    <li>🚗 <b>Vehicle Modifications:</b> Customize your vehicles with a wide range of options, from cosmetic changes to performance upgrades.</li>
+                    <img src="img/features/modifications.png" alt="Vehicle Modifications">
+                    <li>💼 <b>Jobs & Careers:</b> Choose from a variety of jobs and career paths, each with its own set of tasks and rewards.</li>
+                    <img src="img/features/pd.png" alt="Jobs and Careers">
+                    <li>👮 <b>Law Enforcement:</b> Join the police force and maintain law and order, or live on the edge as a criminal mastermind.</li>
+                    <img src="img/features/roleplay.png" alt="Roleplay Scenarios">
+                    <li>📦 <b>Inventory System:</b> Manage your items with an intuitive inventory system that keeps track of your possessions.</li>
+                    <img src="img/features/inventory.png" alt="Inventory System">
+                    <li>💬 <b>Community Events:</b> Participate in regular events and activities organized by our dedicated staff and community members.</li>
+                </ul>
+                <p>We are constantly updating and adding new features based on community feedback. Join us at Capital Network and discover everything we have to offer!</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Capital Network. All rights reserved.</p>
+    </footer>
+</body>
+</html>

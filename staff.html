@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Members</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1, h2, h3 {
+    color: #ffffff;
+}
+
+p {
+    font-size: 0.9rem;
+    color: #b0b0b0;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #1e1e1e;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+.logo img {
+    max-width: 60px;
+    height: auto;
+}
+
+.logo h1 {
+    font-size: 1.2rem;
+    margin-left: 1px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: #b0b0b0;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 60px; /* To account for fixed header */
+}
+
+/* Section Styling */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.about, .features, .countdown {
+    background: #1e1e1e;
+}
+
+/* Features Section */
+.feature-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background: #2c2c2c;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.85rem;
+}
+
+/* Footer */
+footer {
+    background: #1e1e1e;
+    padding: 15px 0;
+    text-align: center;
+    color: #b0b0b0;
+    font-size: 0.85rem;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.jpg" alt="Logo">
+            <h1>Capital Network</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <section class="section about">
+            <h2>Staff Members</h2>
+            <div class="feature-cards">
+                <div class="card">
+                    <h3>Logan</h3>
+                    <p>Role: Creator</p>
+                    <p>Email: Logan@capitalnetwork.org.uk</p>
+                </div>
+                <div class="card">
+                    <h3>Riley</h3>
+                    <p>Role: Creator</p>
+                    <p>Email: Riley@capitalnetwork.org.uk</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Capital Network. All rights reserved.</p>
+    </footer>
+</body>
+</html>
